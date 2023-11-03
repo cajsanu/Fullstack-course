@@ -6,7 +6,7 @@ sequenceDiagram
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     Note right of server: server creates a new note object based on user input and adds it to array of notes
-    server->>browser: returns HTTP status code 302 
+    server->>browser: returns HTTP status code 302 (redirect to do a new HTTP GET request to the address defined in the header's location)
     deactivate server
     Note left of browser: browser reloads Notes page
 
