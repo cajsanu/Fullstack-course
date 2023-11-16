@@ -1,0 +1,18 @@
+p {
+  margin: 5px;
+}
+
+button {
+  padding: 5px;
+  margin: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+/* 
+.stats {
+  display: flex;
+  flex-direction: column;
+} */
